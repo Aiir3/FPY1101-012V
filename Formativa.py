@@ -50,9 +50,30 @@ while star=="true":
         else:
             print(f"Total: $",total)
             contador=1
-            break                                
+    
+            break   
+    else:
+        print("Porfavor Ingrese una opcion valida") 
+        continue
+        os.system="cls"                                
 while contador==1:
     os.system="cls"
-    r=int(input("¿Tiene codigo de descuento?))
+    r=int(input("¿Tiene codigo de descuento?(Si=1/No=2)"))
+    if r==1:
+        cu=input("Ingrese codigo de descuento ")
+        if cu==("soyotaku"):
+            descuento=float(total*0.10)
+            totaldescuento=float(total-descuento)
+        else:
+            cu=input("Codigo invalido. Si desea reintentar el codigo ingrese 'c' de lo contrario ingrese 'x'")
+            if cu=="c":
+                contador==1
+            elif cu=="x":
+                break
+    else:
+        break
+    os.system="cls"
+
+    
 
 
